@@ -1,5 +1,5 @@
 {
-  "name": "Redux on Programmes",
+  "name": "Redux in Programmes",
   "version": "0.1",
   "description": "Embeds Redux videos on /programmes episode pages",
   "manifest_version": 2,
@@ -10,7 +10,6 @@
     }
   ],
   "permissions": [
-    "https://i.bbcredux.com/",
     "http://www.bbc.co.uk/programmes/"
   ]
 }

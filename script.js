@@ -1,6 +1,5 @@
 (function(){
 
-
 var getProgrammeDetails = function(pid, success, error) {
   var url = 'http://www.bbc.co.uk/programmes/' + pid + '.json';
 
@@ -10,7 +9,7 @@ var getProgrammeDetails = function(pid, success, error) {
   xhr.onreadystatechange = function() {
 
     var status, data;
-    
+
     if (xhr.readyState == 4) {
       status = xhr.status;
       if (status == 200) {
@@ -47,13 +46,13 @@ if(matches) {
       }
 
       var reduxUrl = 'https://www.bbcredux.com/search?' + encodeQueryData(params) + '#results';
-      
+
       var element = "<div class=\"br-box-secondary\" style=\"margin-bottom: 2px\">" +
                       "<div class=\"island\">" +
                         "<h2><a href=\"" + reduxUrl +"\">Search on Redux</a></h2>" +
                       "</div>" +
                     "</div>";
-      
+
       document.querySelector('.map__column--last .map__inner').innerHTML = element + document.querySelector('.map__column--last .map__inner').innerHTML;
 
     }
